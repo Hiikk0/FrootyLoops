@@ -21,6 +21,8 @@
     <None Remove="Data\Design\Icons\fileEditOutline.svg" />
     <None Remove="Data\Design\Icons\helpCircleOutline.png" />
     <None Remove="Data\Design\Icons\helpCircleOutline.svg" />
+    <None Remove="Data\Design\Icons\installUpdate.png" />
+    <None Remove="Data\Design\Icons\installUpdateIcon.png" />
     <None Remove="Data\Design\Icons\languageOutline.png" />
     <None Remove="Data\Design\Icons\maximizeIcon.png" />
     <None Remove="Data\Design\Icons\maximizeIcon.svg" />
@@ -32,6 +34,7 @@
     <None Remove="Data\Design\Icons\newFileOutline.svg" />
     <None Remove="Data\Design\Icons\outlineNewReleases.png" />
     <None Remove="Data\Design\Icons\outlineNewReleases.svg" />
+    <None Remove="Data\Design\Icons\playIcon.png" />
     <None Remove="Data\Design\Icons\restore-line.png" />
     <None Remove="Data\Design\Icons\restore-line.svg" />
     <None Remove="Data\Design\Icons\restoreIcon.png" />
@@ -44,6 +47,7 @@
     <None Remove="Data\Design\Icons\UnactiveRememberLoginButton.png" />
     <None Remove="Data\Design\Icons\unactiveRememberLoginButton.svg" />
     <None Remove="Data\Design\Icons\unactiveRememberLoginButtonIc.png" />
+    <None Remove="Data\Design\Icons\updateIcon.png" />
     <None Remove="Data\Design\Icons\userSettingsOutline.png" />
     <None Remove="Data\Design\Icons\userSettingsOutline.svg" />
     <None Remove="Data\Design\Pics\Pic1.jpg" />
@@ -95,6 +99,9 @@
     <Resource Include="Data\Design\Icons\helpCircleOutline.svg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Data\Design\Icons\installUpdateIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Data\Design\Icons\languageOutline.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -128,6 +135,9 @@
     <Resource Include="Data\Design\Icons\outlineNewReleases.svg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Data\Design\Icons\playIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Data\Design\Icons\restoreIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -153,6 +163,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Data\Design\Icons\unactiveRememberLoginButtonIc.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\updateIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Data\Design\Icons\userSettingsOutline.png">

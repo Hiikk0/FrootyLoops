@@ -92,3 +92,6 @@ C:\Users\Shado\OneDrive\КН-24\ОПАМ\FL\FrootyLoops\FrootyLoops\obj\Debug\ne
 C:\Users\Shado\OneDrive\КН-24\ОПАМ\FL\FrootyLoops\FrootyLoops\obj\Debug\net8.0-windows\UserControls\SettingsContent\SystemSettings.baml
 C:\Users\Shado\OneDrive\КН-24\ОПАМ\FL\FrootyLoops\FrootyLoops\obj\Debug\net8.0-windows\UserControls\SettingsContent\UserSettings.baml
 C:\Users\Shado\OneDrive\КН-24\ОПАМ\FL\FrootyLoops\FrootyLoops\obj\Debug\net8.0-windows\UserControls\SettingsContent\Workzone.baml
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\FL\FrootyLoops\FrootyLoops\obj\Debug\net8.0-windows\FrootyLoops.sourcelink.json
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\FL\FrootyLoops\FrootyLoops\obj\Debug\net8.0-windows\UserControls\SettingsContent\Update.g.cs
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\FL\FrootyLoops\FrootyLoops\obj\Debug\net8.0-windows\UserControls\SettingsContent\Update.baml

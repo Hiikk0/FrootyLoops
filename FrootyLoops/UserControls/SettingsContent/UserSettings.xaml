@@ -196,6 +196,14 @@
                         Style="{StaticResource TextBoxStyle}"
                         Text="PasswordHint" />
                 </Grid>
+                <Button Style="{StaticResource SmallDeclineButton}" 
+                        Width="400" 
+                        Margin="0,20,0,20" Click="DelAccBtn_Click">
+                    <TextBlock
+                        FontSize="16"
+                        Style="{StaticResource TextBlockStyle}"
+                        Text="DELETE ACCOUNT" />
+                </Button>
             </hc:SimpleStackPanel>
         </hc:ScrollViewer>
         <hc:SimplePanel
@@ -209,8 +217,9 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
                 HorizontalContentAlignment="Left"
+                Click="CancelButton_Click"
                 Content="Cancel"
-                Style="{StaticResource SmallDeclineButton}" Click="CancelButton_Click" />
+                Style="{StaticResource SmallDeclineButton}" />
             <Button
                 x:Name="AcceptButton"
                 Width="100"

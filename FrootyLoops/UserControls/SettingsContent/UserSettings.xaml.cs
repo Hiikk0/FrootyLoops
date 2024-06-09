@@ -27,6 +27,7 @@ namespace FrootyLoops.UserControls.SettingsContent
     {
         public event Action? Accept;
         public event Action? Decline;
+        public event Action? Delete;
         public UserSettings()
         {
             InitializeComponent();
@@ -47,6 +48,11 @@ namespace FrootyLoops.UserControls.SettingsContent
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             Decline?.Invoke();
+        }
+
+        private void DelAccBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Delete?.Invoke();
         }
     }
 }
