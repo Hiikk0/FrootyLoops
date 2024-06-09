@@ -3,9 +3,11 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
+	  <Version>0.2.5</Version>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Data\Design\Pics\ExeIcon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +23,8 @@
     <None Remove="Data\Design\Icons\fileEditOutline.svg" />
     <None Remove="Data\Design\Icons\helpCircleOutline.png" />
     <None Remove="Data\Design\Icons\helpCircleOutline.svg" />
+    <None Remove="Data\Design\Icons\installUpdate.png" />
+    <None Remove="Data\Design\Icons\installUpdateIcon.png" />
     <None Remove="Data\Design\Icons\languageOutline.png" />
     <None Remove="Data\Design\Icons\maximizeIcon.png" />
     <None Remove="Data\Design\Icons\maximizeIcon.svg" />
@@ -32,6 +36,7 @@
     <None Remove="Data\Design\Icons\newFileOutline.svg" />
     <None Remove="Data\Design\Icons\outlineNewReleases.png" />
     <None Remove="Data\Design\Icons\outlineNewReleases.svg" />
+    <None Remove="Data\Design\Icons\playIcon.png" />
     <None Remove="Data\Design\Icons\restore-line.png" />
     <None Remove="Data\Design\Icons\restore-line.svg" />
     <None Remove="Data\Design\Icons\restoreIcon.png" />
@@ -44,6 +49,7 @@
     <None Remove="Data\Design\Icons\UnactiveRememberLoginButton.png" />
     <None Remove="Data\Design\Icons\unactiveRememberLoginButton.svg" />
     <None Remove="Data\Design\Icons\unactiveRememberLoginButtonIc.png" />
+    <None Remove="Data\Design\Icons\updateIcon.png" />
     <None Remove="Data\Design\Icons\userSettingsOutline.png" />
     <None Remove="Data\Design\Icons\userSettingsOutline.svg" />
     <None Remove="Data\Design\Pics\Pic1.jpg" />
@@ -53,8 +59,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Data\Design\Pics\ExeIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="HandyControls" Version="3.5.3" />
     <PackageReference Include="Neo.Markdig.Xaml" Version="1.0.10" />
+    <PackageReference Include="Octokit" Version="12.0.0" />
     <PackageReference Include="Svg" Version="3.4.7" />
   </ItemGroup>
 
@@ -95,6 +106,9 @@
     <Resource Include="Data\Design\Icons\helpCircleOutline.svg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Data\Design\Icons\installUpdateIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Data\Design\Icons\languageOutline.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -128,6 +142,9 @@
     <Resource Include="Data\Design\Icons\outlineNewReleases.svg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Data\Design\Icons\playIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Data\Design\Icons\restoreIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -153,6 +170,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Data\Design\Icons\unactiveRememberLoginButtonIc.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\updateIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Data\Design\Icons\userSettingsOutline.png">

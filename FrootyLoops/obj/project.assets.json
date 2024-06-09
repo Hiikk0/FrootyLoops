@@ -83,6 +83,19 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "Octokit/12.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Octokit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Octokit.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Svg/3.4.7": {
         "type": "package",
         "dependencies": {
@@ -304,6 +317,20 @@
         "neo.markdig.xaml.nuspec"
       ]
     },
+    "Octokit/12.0.0": {
+      "sha512": "7LAFFcirR/IaC84Uy+L1L+yqlYHxaMjHPt5GeLkB/GG0ujl7IgWWcL3VHMwMB3Y76Spsz0lMnPKub4EeosSljg==",
+      "type": "package",
+      "path": "octokit/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Octokit.dll",
+        "lib/netstandard2.0/Octokit.xml",
+        "octokit.12.0.0.nupkg.sha512",
+        "octokit.nuspec",
+        "octokit.png"
+      ]
+    },
     "Svg/3.4.7": {
       "sha512": "Omez7ly5BGhg3OzdV+LHZ5sI0+JQ6hF7WVKUeyHw4jRvcEWNCPCf1MWMBaf+R0DRBSZHx5EUHwBTEF+2oYtsAw==",
       "type": "package",
@@ -379,6 +406,7 @@
     "net8.0-windows7.0": [
       "HandyControls >= 3.5.3",
       "Neo.Markdig.Xaml >= 1.0.10",
+      "Octokit >= 12.0.0",
       "Svg >= 3.4.7"
     ]
   },
@@ -387,7 +415,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "0.2.5",
     "restore": {
       "projectUniqueName": "C:\\Users\\Shado\\OneDrive\\КН-24\\ОПАМ\\FL\\FrootyLoops\\FrootyLoops\\FrootyLoops.csproj",
       "projectName": "FrootyLoops",
@@ -434,6 +462,10 @@
           "Neo.Markdig.Xaml": {
             "target": "Package",
             "version": "[1.0.10, )"
+          },
+          "Octokit": {
+            "target": "Package",
+            "version": "[12.0.0, )"
           },
           "Svg": {
             "target": "Package",

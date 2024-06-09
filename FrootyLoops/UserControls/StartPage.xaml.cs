@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FrootyLoops.Data.Entities;
+using Microsoft.Win32;
 
 namespace FrootyLoops.UserControls
 {
@@ -27,6 +28,7 @@ namespace FrootyLoops.UserControls
         /// Змінна для передачі події в UserControl
         /// </summary>
         public event Action? ShowSettings;
+        public event Action? ShowWorkplace;
         /// <summary>
         /// Точка входу
         /// </summary>
@@ -58,5 +60,16 @@ namespace FrootyLoops.UserControls
             ShowSettings?.Invoke();
         }
 
+        private void NewFile_Click(object sender, RoutedEventArgs e)
+        {
+            ShowWorkplace?.Invoke();
+        }
+        private void OpenFile_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Music files (*.mp3, *.wav)|*.mp3; *.wav";
+            openFileDialog.ShowDialog();
+            ShowWorkplace?.Invoke();
+        }
     }
 }

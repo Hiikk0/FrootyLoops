@@ -14,11 +14,19 @@
           }
         }
       },
-      "HandyControls/3.5.2": {
+      "HandyControls/3.5.3": {
         "runtime": {
           "lib/net8.0/HandyControl.dll": {
             "assemblyVersion": "3.5.2.0",
             "fileVersion": "3.5.2.0"
+          }
+        }
+      },
+      "Markdig/0.25.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Markdig.dll": {
+            "assemblyVersion": "0.25.0.0",
+            "fileVersion": "0.25.0.0"
           }
         }
       },
@@ -39,6 +47,25 @@
             "assetType": "runtime",
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "Neo.Markdig.Xaml/1.0.10": {
+        "dependencies": {
+          "Markdig": "0.25.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Neo.Markdig.Xaml.dll": {
+            "assemblyVersion": "1.0.10.0",
+            "fileVersion": "1.0.10.0"
+          }
+        }
+      },
+      "Octokit/12.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Octokit.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
           }
         }
       },
@@ -89,12 +116,19 @@
       "path": "excss/4.2.3",
       "hashPath": "excss.4.2.3.nupkg.sha512"
     },
-    "HandyControls/3.5.2": {
+    "HandyControls/3.5.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-c0CU3X+zGAdDoHBejLSHW+OoCCZNnLygcUiEVn/00HukC/1ik56k6+bjFNgPdfFfWlhqERQ6rdqTP8Qm6dElOg==",
-      "path": "handycontrols/3.5.2",
-      "hashPath": "handycontrols.3.5.2.nupkg.sha512"
+      "sha512": "sha512-VZ38Re5I8T7WJPLTMamMyGvcVs442FKY/P7XEkDl8vh5eEz/dKE0I0/r5p/Kmyip8rIA0td89Fh8WdYe/RfBLw==",
+      "path": "handycontrols/3.5.3",
+      "hashPath": "handycontrols.3.5.3.nupkg.sha512"
+    },
+    "Markdig/0.25.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8szvH6U9LvqIpc297eOwC2NEF6f6fsPIV25Vptq21uHgkGCjYxwfSLujcnZa8wgvu71BeK/P00kAbYb/T+OmpQ==",
+      "path": "markdig/0.25.0",
+      "hashPath": "markdig.0.25.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",
@@ -109,6 +143,20 @@
       "sha512": "sha512-Bh6blKG8VAKvXiLe2L+sEsn62nc1Ij34MrNxepD2OCrS5cpCwQa9MeLyhVQPQ/R4Wlzwuy6wMK8hLb11QPDRsQ==",
       "path": "microsoft.win32.systemevents/5.0.0",
       "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
+    },
+    "Neo.Markdig.Xaml/1.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JBFL/mVkSrGz41H+vyRWOy91RBw2wvjINzAn04a8KF9UAqXJZ4MeNbEky0jrrhqc9PBBio6xVbjXLcuwafT9tg==",
+      "path": "neo.markdig.xaml/1.0.10",
+      "hashPath": "neo.markdig.xaml.1.0.10.nupkg.sha512"
+    },
+    "Octokit/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7LAFFcirR/IaC84Uy+L1L+yqlYHxaMjHPt5GeLkB/GG0ujl7IgWWcL3VHMwMB3Y76Spsz0lMnPKub4EeosSljg==",
+      "path": "octokit/12.0.0",
+      "hashPath": "octokit.12.0.0.nupkg.sha512"
     },
     "Svg/3.4.7": {
       "type": "package",

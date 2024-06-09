@@ -37,13 +37,6 @@ namespace FrootyLoops.UserControls
         /// </summary>
         public event Action? GoToStartPage;
 
-        public event Action? ThemeShow;
-        public event Action? WhatsNewShow;
-        public event Action? FAQShow;
-        public event Action? SysSetShow;
-        public event Action? WorkzoneShow;
-        public event Action? LanguageShow;
-        public event Action? UserSetShow;
         /// <summary>
         /// Точка входу
         /// </summary>
@@ -61,6 +54,10 @@ namespace FrootyLoops.UserControls
             {
                 Content.Content = viewModel.CurrentSettingsContent;
             }
+            if (e.PropertyName == "DeleteAccount")
+            {
+                ExitFromAccBtn.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+            }
         }
         /// <summary>
         /// Клік на кнопку для виходу з аккаунту (перехід до логіну)
@@ -69,8 +66,7 @@ namespace FrootyLoops.UserControls
         /// <param name="e"></param>
         private void ExitFromAcc_Click(object sender, RoutedEventArgs e)
         {
-            try { File.Delete(App.STDPATH + "/Users/user.json"); } catch (FileNotFoundException){  }
-            CurrentUser.Clear();
+            viewModel.ExitFromAcc();
             SwitchToLogin?.Invoke();
         }
         /// <summary>
@@ -127,6 +123,12 @@ namespace FrootyLoops.UserControls
         {
             //Content.Content = new UserSettings();
             viewModel.UserSetShow();
+        }
+
+        private void Update_Checked(object sender, RoutedEventArgs e)
+        {
+            viewModel.UpdateShow();
+
         }
     }
 }

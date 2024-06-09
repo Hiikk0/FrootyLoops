@@ -44,7 +44,10 @@
                             <RowDefinition />
                             <RowDefinition />
                         </Grid.RowDefinitions>
-                        <Button Grid.Row="0" Style="{StaticResource BigButton}">
+                        <Button
+                            Grid.Row="0"
+                            Click="NewFile_Click"
+                            Style="{StaticResource BigButton}">
                             <Grid Width="420">
                                 <Image
                                     Width="64"
@@ -61,7 +64,10 @@
                             </Grid>
                         </Button>
 
-                        <Button Grid.Row="1" Style="{StaticResource BigButton}">
+                        <Button
+                            Grid.Row="1"
+                            Click="OpenFile_Click"
+                            Style="{StaticResource BigButton}">
                             <Grid Width="420">
                                 <Image
                                     Width="64"
@@ -107,6 +113,7 @@
                         <TextBlock
                             x:Name="Username"
                             Grid.Column="1"
+                            Width="210"
                             MaxHeight="100"
                             Margin="10,0,0,0"
                             HorizontalAlignment="Left"
@@ -116,8 +123,7 @@
                             Style="{StaticResource TextBlockStyle}"
                             Text=""
                             TextAlignment="Left"
-                            TextWrapping="Wrap" 
-                            Width="210"/>
+                            TextWrapping="Wrap" />
                         <Button
                             Grid.Column="2"
                             Width="64"

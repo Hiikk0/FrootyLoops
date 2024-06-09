@@ -11,7 +11,7 @@
           "lib/net7.0/ExCSS.dll": {}
         }
       },
-      "HandyControls/3.5.2": {
+      "HandyControls/3.5.3": {
         "type": "package",
         "compile": {
           "lib/net8.0/HandyControl.dll": {
@@ -21,6 +21,19 @@
         "runtime": {
           "lib/net8.0/HandyControl.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "Markdig/0.25.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Markdig.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Markdig.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -58,6 +71,34 @@
           "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
             "assetType": "runtime",
             "rid": "win"
+          }
+        }
+      },
+      "Neo.Markdig.Xaml/1.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Markdig": "0.25.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Neo.Markdig.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Neo.Markdig.Xaml.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "Octokit/12.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Octokit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Octokit.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -115,7 +156,7 @@
           "lib/net7.0/ExCSS.dll": {}
         }
       },
-      "HandyControls/3.5.2": {
+      "HandyControls/3.5.3": {
         "type": "package",
         "compile": {
           "lib/net8.0/HandyControl.dll": {
@@ -125,6 +166,19 @@
         "runtime": {
           "lib/net8.0/HandyControl.dll": {
             "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "Markdig/0.25.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Markdig.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Markdig.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -155,6 +209,34 @@
         },
         "runtime": {
           "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Neo.Markdig.Xaml/1.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Markdig": "0.25.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Neo.Markdig.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Neo.Markdig.Xaml.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "Octokit/12.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Octokit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Octokit.dll": {
             "related": ".xml"
           }
         }
@@ -213,17 +295,17 @@
         "readme.md"
       ]
     },
-    "HandyControls/3.5.2": {
-      "sha512": "c0CU3X+zGAdDoHBejLSHW+OoCCZNnLygcUiEVn/00HukC/1ik56k6+bjFNgPdfFfWlhqERQ6rdqTP8Qm6dElOg==",
+    "HandyControls/3.5.3": {
+      "sha512": "VZ38Re5I8T7WJPLTMamMyGvcVs442FKY/P7XEkDl8vh5eEz/dKE0I0/r5p/Kmyip8rIA0td89Fh8WdYe/RfBLw==",
       "type": "package",
-      "path": "handycontrols/3.5.2",
+      "path": "handycontrols/3.5.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "docs/readme.md",
-        "handycontrols.3.5.2.nupkg.sha512",
+        "handycontrols.3.5.3.nupkg.sha512",
         "handycontrols.nuspec",
         "icon.png",
         "lib/net40/HandyControl.dll",
@@ -287,6 +369,28 @@
         "lib/netcoreapp3.1/HandyControl.xml",
         "readme.txt",
         "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Markdig/0.25.0": {
+      "sha512": "8szvH6U9LvqIpc297eOwC2NEF6f6fsPIV25Vptq21uHgkGCjYxwfSLujcnZa8wgvu71BeK/P00kAbYb/T+OmpQ==",
+      "type": "package",
+      "path": "markdig/0.25.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Markdig.dll",
+        "lib/net452/Markdig.xml",
+        "lib/netcoreapp2.1/Markdig.dll",
+        "lib/netcoreapp2.1/Markdig.xml",
+        "lib/netcoreapp3.1/Markdig.dll",
+        "lib/netcoreapp3.1/Markdig.xml",
+        "lib/netstandard2.0/Markdig.dll",
+        "lib/netstandard2.0/Markdig.xml",
+        "lib/netstandard2.1/Markdig.dll",
+        "lib/netstandard2.1/Markdig.xml",
+        "markdig.0.25.0.nupkg.sha512",
+        "markdig.nuspec",
+        "markdig.png"
       ]
     },
     "Microsoft.NET.ILLink.Tasks/8.0.2": {
@@ -386,6 +490,33 @@
         "version.txt"
       ]
     },
+    "Neo.Markdig.Xaml/1.0.10": {
+      "sha512": "JBFL/mVkSrGz41H+vyRWOy91RBw2wvjINzAn04a8KF9UAqXJZ4MeNbEky0jrrhqc9PBBio6xVbjXLcuwafT9tg==",
+      "type": "package",
+      "path": "neo.markdig.xaml/1.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net47/Neo.Markdig.Xaml.dll",
+        "lib/netcoreapp3.1/Neo.Markdig.Xaml.dll",
+        "neo.markdig.xaml.1.0.10.nupkg.sha512",
+        "neo.markdig.xaml.nuspec"
+      ]
+    },
+    "Octokit/12.0.0": {
+      "sha512": "7LAFFcirR/IaC84Uy+L1L+yqlYHxaMjHPt5GeLkB/GG0ujl7IgWWcL3VHMwMB3Y76Spsz0lMnPKub4EeosSljg==",
+      "type": "package",
+      "path": "octokit/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Octokit.dll",
+        "lib/netstandard2.0/Octokit.xml",
+        "octokit.12.0.0.nupkg.sha512",
+        "octokit.nuspec",
+        "octokit.png"
+      ]
+    },
     "Svg/3.4.7": {
       "sha512": "Omez7ly5BGhg3OzdV+LHZ5sI0+JQ6hF7WVKUeyHw4jRvcEWNCPCf1MWMBaf+R0DRBSZHx5EUHwBTEF+2oYtsAw==",
       "type": "package",
@@ -459,8 +590,10 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "HandyControls >= 3.5.2",
+      "HandyControls >= 3.5.3",
       "Microsoft.NET.ILLink.Tasks >= 8.0.2",
+      "Neo.Markdig.Xaml >= 1.0.10",
+      "Octokit >= 12.0.0",
       "Svg >= 3.4.7"
     ]
   },
@@ -469,13 +602,13 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "0.2.5",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Shado\\OneDrive\\КН-24\\ОПАМ\\Практика 2\\FrootyLoops\\FrootyLoops\\FrootyLoops.csproj",
+      "projectUniqueName": "C:\\Users\\Shado\\OneDrive\\КН-24\\ОПАМ\\FL\\FrootyLoops\\FrootyLoops\\FrootyLoops.csproj",
       "projectName": "FrootyLoops",
-      "projectPath": "C:\\Users\\Shado\\OneDrive\\КН-24\\ОПАМ\\Практика 2\\FrootyLoops\\FrootyLoops\\FrootyLoops.csproj",
+      "projectPath": "C:\\Users\\Shado\\OneDrive\\КН-24\\ОПАМ\\FL\\FrootyLoops\\FrootyLoops\\FrootyLoops.csproj",
       "packagesPath": "C:\\Users\\Shado\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Shado\\OneDrive\\КН-24\\ОПАМ\\Практика 2\\FrootyLoops\\FrootyLoops\\obj\\publish\\win-x64\\",
+      "outputPath": "C:\\Users\\Shado\\OneDrive\\КН-24\\ОПАМ\\FL\\FrootyLoops\\FrootyLoops\\obj\\publish\\win-x64\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -511,13 +644,21 @@
         "dependencies": {
           "HandyControls": {
             "target": "Package",
-            "version": "[3.5.2, )"
+            "version": "[3.5.3, )"
           },
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.2, )",
             "autoReferenced": true
+          },
+          "Neo.Markdig.Xaml": {
+            "target": "Package",
+            "version": "[1.0.10, )"
+          },
+          "Octokit": {
+            "target": "Package",
+            "version": "[12.0.0, )"
           },
           "Svg": {
             "target": "Package",

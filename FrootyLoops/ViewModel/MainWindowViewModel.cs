@@ -144,7 +144,18 @@ namespace FrootyLoops.ViewModel
             Control.UserPic.ImageSource = stdImage;
             Control.PicСontainer.Fill = Control.UserPic;
             Control.ShowSettings += () => ShowSettings(Control.BUTTONID);
+            Control.ShowWorkplace += ShowWorkplace;
         }
+
+        private void ShowWorkplace()
+        {
+            var Control = new UserControls.Workplace();
+            CurrentSizeToContentState = SizeToContent.Manual;
+            CurrentUserControl = Control;
+            CurrentMinWidth = Control.MinWidth;
+            CurrentMinHeight = Control.MinHeight;
+        }
+
         /// <summary>
         /// Встановлення Settings поточним контентом вікна та підписка на події
         /// Шляхи: до логіна та до стартової сторінки

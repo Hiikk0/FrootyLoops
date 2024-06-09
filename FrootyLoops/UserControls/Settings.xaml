@@ -178,13 +178,13 @@
                                 x:Name="CheckUpdatesBtn"
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
-                                Checked="FAQ_Checked"
+                                Checked="Update_Checked"
                                 Style="{DynamicResource SmallSettingsRadioButton}">
                                 <StackPanel
                                     Margin="10,0,0,0"
                                     HorizontalAlignment="Left"
                                     Orientation="Horizontal">
-                                    <Image HorizontalAlignment="Left" Source="/Data/Design/Icons/helpCircleOutline.png" />
+                                    <Image HorizontalAlignment="Left" Source="/Data/Design/Icons/updateIcon.png" />
                                     <TextBlock
                                         Margin="8,0,0,0"
                                         FontSize="32"
@@ -200,7 +200,7 @@
                     Margin="25,0,0,20"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Bottom">
-                    <Button
+                    <Button x:Name="ExitFromAccBtn"
                         Width="274"
                         Height="40"
                         HorizontalAlignment="Stretch"
@@ -273,11 +273,11 @@
             </Grid>
         </Border>
         <hc:ScrollViewer
+            Grid.Column="0"
             HorizontalAlignment="Left"
             IsInertiaEnabled="True"
             IsManipulationEnabled="True"
-            VerticalScrollBarVisibility="Auto"
-            Grid.Column="0">
+            VerticalScrollBarVisibility="Auto">
             <StackPanel
                 Margin="10,0,0,10"
                 VerticalAlignment="Top"

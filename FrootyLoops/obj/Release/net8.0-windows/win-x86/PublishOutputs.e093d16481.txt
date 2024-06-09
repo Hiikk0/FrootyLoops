@@ -1,0 +1,2 @@
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\FL\FrootyLoops\FrootyLoops\bin\Release\net8.0-windows\FrootyLoops.pdb
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\FL\FrootyLoops\FrootyLoops\bin\Release\net8.0-windows\FrootyLoops.exe

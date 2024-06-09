@@ -1,5 +1,6 @@
 ﻿using FrootyLoops.Data.Entities;
 using FrootyLoops.Services;
+using FrootyLoops.UserControls;
 using FrootyLoops.UserControls.SettingsContent;
 using HandyControl.Controls;
 using HandyControl.Data;
@@ -13,6 +14,7 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
@@ -20,6 +22,7 @@ namespace FrootyLoops.ViewModel
 {
     public class SettingsContentMainView : INotifyPropertyChanged
     {
+        public static bool _deleteAccount = false;
         /// <summary>
         /// Тимчасова змінна для поточного UserControl.
         /// </summary>
@@ -38,6 +41,19 @@ namespace FrootyLoops.ViewModel
             {
                 _currentSettingsViewModel = value;
                 OnPropertyChanged("CurrentSettingsContent");
+            }
+        }
+        public object DeleteAccount
+        {
+            get
+            {
+
+                return _deleteAccount;
+            }
+            set
+            {
+                _deleteAccount = (bool)value;
+                OnPropertyChanged("DeleteAccount");
             }
         }
 
@@ -81,6 +97,11 @@ namespace FrootyLoops.ViewModel
                 OnPropertyChanged("UserPasswordHint");
             }
         }
+        public void ExitFromAcc()
+        {
+            try { File.Delete(App.STDPATH + "/Users/user.json"); } catch (FileNotFoundException) { }
+            CurrentUser.Clear();
+        }
 
         public void ThemeShow()
         {
@@ -116,6 +137,11 @@ namespace FrootyLoops.ViewModel
             var content = new Language();
             CurrentSettingsContent = content;
         }
+        public void UpdateShow()
+        {
+            var content = new Update();
+            CurrentSettingsContent = content;
+        }
         public void UserSetShow()
         {
             var content = new UserSettings();
@@ -127,6 +153,26 @@ namespace FrootyLoops.ViewModel
             content.Decline += () => CancelChanges(content);
             content.UserPic.ImageSelected += UserPic_ImageSelected;
             content.UserPic.ImageUnselected += UserPic_ImageUnSelected;
+            content.Delete += UserDeleteWarning;
+        }
+
+        private void UserDeleteWarning()
+        {
+            Growl.Ask("Are you sure you want to delete your account? This action cannot be undone.", isConfirmed =>
+            {
+                if (isConfirmed)
+                {
+                    Directory.Delete(App.STDPATH + "/Users/" + CurrentUser.user.Name, true);
+                    Growl.Clear();
+                    DeleteAccount = true;
+                    return true;
+                }
+                else
+                {
+                    Growl.Clear();
+                    return false;
+                }
+            }, "SettingsErrors");
         }
 
         private void CancelChanges(UserSettings content)
@@ -206,6 +252,10 @@ namespace FrootyLoops.ViewModel
                 }
                 catch (Exception) { success = false; }
             }
+            else if (content.Username.Text != CurrentUser.user.Name && CheckInput(content, 0) == false)
+            {
+                success = false;
+            }
             if (content.NewPassword.IsEnabled == true && CheckInput(content,1)) 
             {
                 UserPassword = Encryptor.Encrypt(content.NewPassword.Text);
@@ -215,6 +265,10 @@ namespace FrootyLoops.ViewModel
                 }
                 catch (Exception) { success = false; }
             }
+            else if (content.NewPassword.IsEnabled == true && CheckInput(content, 1) == false)
+            {
+                success = false;
+            }
             if (content.UserEmail.Text != CurrentUser.user.Email && CheckInput(content,2)) 
             { 
                 UserEmail = content.UserEmail.Text;
@@ -223,6 +277,10 @@ namespace FrootyLoops.ViewModel
                     JsonWorker.UpdateJson("Email", UserEmail, App.STDPATH + "/Users/" + CurrentUser.user.Name + "/UserInfo.json"); 
                 }
                 catch (Exception) { success = false; }
+            }
+            else if (content.UserEmail.Text != CurrentUser.user.Email && CheckInput(content, 2) == false)
+            {
+                success = false;
             }
             if (content.UserPasswordHint.Text != CurrentUser.user.PasswordHint)
             {
@@ -267,7 +325,6 @@ namespace FrootyLoops.ViewModel
                     WaitTime = 10,
                     Token = "SettingsErrors",
                 });
-                throw;
             };
         }
         private void UserPic_ImageUnSelected(object sender, RoutedEventArgs e)

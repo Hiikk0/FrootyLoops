@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "khJOYr4Js9GBcsKEBbQo3byW+CXBqehVi07/MPbnYkk3EtOgfpWmSbfOi3nEAe/CwG8zGS3i7rIOE9k8hNTO5g==",
+  "dgSpecHash": "Xblb33m+w4zVOuV4T+VcWn6rgx8ITwmzjrJZb5FR1iDq0cdTnx0ksOMOn+Urkpu0yN245pPVFS/siNDIbnox+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Shado\\OneDrive\\КН-24\\ОПАМ\\FL\\FrootyLoops\\FrootyLoops\\FrootyLoops.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Shado\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Shado\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\Shado\\.nuget\\packages\\neo.markdig.xaml\\1.0.10\\neo.markdig.xaml.1.0.10.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\octokit\\12.0.0\\octokit.12.0.0.nupkg.sha512",
     "C:\\Users\\Shado\\.nuget\\packages\\svg\\3.4.7\\svg.3.4.7.nupkg.sha512",
     "C:\\Users\\Shado\\.nuget\\packages\\system.drawing.common\\5.0.3\\system.drawing.common.5.0.3.nupkg.sha512"
   ],

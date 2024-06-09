@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Shado\OneDrive\КН-24\ОПАМ\Практика 2\FrootyLoops\FrootyLoops\obj\Release\net8.0-windows\win-x64\
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\FL\FrootyLoops\FrootyLoops\obj\Release\net8.0-windows\win-x64\
 FrootyLoops
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
-C:\Users\Shado\OneDrive\КН-24\ОПАМ\Практика 2\FrootyLoops\FrootyLoops\App.xaml
-81756260228
-
-15778691695
-2022142997152
-Data\Themes\LightTheme.xaml;Data\Themes\Theme.xaml;Forms\MainWindow.xaml;UserControls\Login.xaml;UserControls\Registration.xaml;UserControls\Settings.xaml;UserControls\SettingsContent\Theme.xaml;UserControls\StartPage.xaml;
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\FL\FrootyLoops\FrootyLoops\App.xaml
+16-683828258
+1-57759926
+28-506161234
+20592268057
+Data\Themes\LightTheme.xaml;Data\Themes\Theme.xaml;Forms\MainWindow.xaml;UserControls\Login.xaml;UserControls\Registration.xaml;UserControls\Settings.xaml;UserControls\SettingsContent\FAQ.xaml;UserControls\SettingsContent\Language.xaml;UserControls\SettingsContent\SystemSettings.xaml;UserControls\SettingsContent\Theme.xaml;UserControls\SettingsContent\Update.xaml;UserControls\SettingsContent\UserSettings.xaml;UserControls\SettingsContent\WhatsNew.xaml;UserControls\SettingsContent\Workzone.xaml;UserControls\StartPage.xaml;UserControls\Workplace.xaml;
 splashscr.png
 False
 

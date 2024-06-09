@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_LastSelectedProfileId>C:\Users\Shado\OneDrive\КН-24\ОПАМ\Практика 2\FrootyLoops\FrootyLoops\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+    <_LastSelectedProfileId>C:\Users\Shado\OneDrive\КН-24\ОПАМ\FL\FrootyLoops\FrootyLoops\Properties\PublishProfiles\FolderProfile1.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
     <ApplicationDefinition Update="App.xaml">
@@ -31,6 +31,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UserControls\SettingsContent\Theme.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\SettingsContent\Update.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UserControls\SettingsContent\UserSettings.xaml.cs">
@@ -78,6 +81,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControls\SettingsContent\Theme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\SettingsContent\Update.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControls\SettingsContent\UserSettings.xaml">
