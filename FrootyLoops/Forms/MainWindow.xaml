@@ -1,0 +1,94 @@
+﻿<hc:Window
+    x:Class="FrootyLoops.Forms.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:local="clr-namespace:FrootyLoops.Forms"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sv="clr-namespace:FrootyLoops.Services"
+    xmlns:uc="clr-namespace:FrootyLoops.UserControls"
+    xmlns:viewmodel="clr-namespace:FrootyLoops.ViewModel"
+    Title="MainWindow"
+    MinWidth="{Binding CurrentMinWidth}"
+    MinHeight="{Binding CurrentMinHeight}"
+    d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
+    AllowsTransparency="True"
+    NonClientAreaHeight="0"
+    ShowNonClientArea="False"
+    SizeToContent="{Binding CurrentSizeToContentState}"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Window.Template>
+        <ControlTemplate TargetType="{x:Type Window}">
+            <Border Background="{DynamicResource WindowColor}" CornerRadius="15">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="32" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Border
+                        Grid.Row="0"
+                        Background="{DynamicResource WindowBarColor}"
+                        CornerRadius="15,15,0,0"
+                        MouseLeftButtonDown="Border_MouseLeftButtonDown">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel
+                                Grid.Column="1"
+                                Margin="0,0,10,0"
+                                HorizontalAlignment="Right"
+                                Orientation="Horizontal">
+                                <Button
+                                    Width="32"
+                                    Height="32"
+                                    Padding="5,5,5,5"
+                                    Background="Transparent"
+                                    BorderThickness="0"
+                                    Click="Minimize_Click">
+                                    <Image
+                                        Width="18"
+                                        Height="18"
+                                        Source="/Data/Design/Icons/minimizeFill.png" />
+                                </Button>
+                                <Button
+                                    Width="32"
+                                    Height="32"
+                                    Padding="5,5,5,5"
+                                    Background="Transparent"
+                                    BorderThickness="0"
+                                    Click="Maximize_Click">
+                                    <Image
+                                        x:Name="MaxIcon"
+                                        Width="18"
+                                        Height="18"
+                                        Source="/Data/Design/Icons/maximizeIcon.png"
+                                        Stretch="UniformToFill" />
+                                </Button>
+                                <Button
+                                    Width="32"
+                                    Height="32"
+                                    Padding="5,5,5,5"
+                                    Background="Transparent"
+                                    BorderThickness="0"
+                                    Click="Close_Click">
+                                    <Image
+                                        Width="18"
+                                        Height="18"
+                                        Source="/Data/Design/Icons/closeIcon.png" />
+                                </Button>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <ContentPresenter
+                        Grid.Row="1"
+                        Margin="0,0,0,-32"
+                        Content="{Binding CurrentUserControl}" />
+                </Grid>
+            </Border>
+        </ControlTemplate>
+    </Window.Template>
+</hc:Window>

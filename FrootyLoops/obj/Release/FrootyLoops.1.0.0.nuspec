@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>FrootyLoops</id>
+    <version>1.0.0</version>
+    <authors>FrootyLoops</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0">
+        <dependency id="HandyControls" version="3.5.2" exclude="Build,Analyzers" />
+        <dependency id="Svg" version="3.4.7" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\Shado\OneDrive\КН-24\ОПАМ\Практика 2\FrootyLoops\FrootyLoops\bin\Release\net8.0-windows\FrootyLoops.runtimeconfig.json" target="lib\net8.0-windows7.0\FrootyLoops.runtimeconfig.json" />
+    <file src="C:\Users\Shado\OneDrive\КН-24\ОПАМ\Практика 2\FrootyLoops\FrootyLoops\bin\Release\net8.0-windows\FrootyLoops.dll" target="lib\net8.0-windows7.0\FrootyLoops.dll" />
+  </files>
+</package>

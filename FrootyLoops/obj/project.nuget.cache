@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "khJOYr4Js9GBcsKEBbQo3byW+CXBqehVi07/MPbnYkk3EtOgfpWmSbfOi3nEAe/CwG8zGS3i7rIOE9k8hNTO5g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Shado\\OneDrive\\КН-24\\ОПАМ\\FL\\FrootyLoops\\FrootyLoops\\FrootyLoops.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Shado\\.nuget\\packages\\excss\\4.2.3\\excss.4.2.3.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\handycontrols\\3.5.3\\handycontrols.3.5.3.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\markdig\\0.25.0\\markdig.0.25.0.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\neo.markdig.xaml\\1.0.10\\neo.markdig.xaml.1.0.10.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\svg\\3.4.7\\svg.3.4.7.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\system.drawing.common\\5.0.3\\system.drawing.common.5.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

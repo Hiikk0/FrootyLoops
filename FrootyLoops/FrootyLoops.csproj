@@ -1,0 +1,184 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\Design\Icons\activeRememberLoginButton.png" />
+    <None Remove="Data\Design\Icons\activeRememberLoginButtonIc.png" />
+    <None Remove="Data\Design\Icons\backIcon.png" />
+    <None Remove="Data\Design\Icons\backIcon.svg" />
+    <None Remove="Data\Design\Icons\closeIcon.png" />
+    <None Remove="Data\Design\Icons\closeIcon.svg" />
+    <None Remove="Data\Design\Icons\exitFromAccountRounded.png" />
+    <None Remove="Data\Design\Icons\exitFromAccountRounded.svg" />
+    <None Remove="Data\Design\Icons\fileEditOutline.png" />
+    <None Remove="Data\Design\Icons\fileEditOutline.svg" />
+    <None Remove="Data\Design\Icons\helpCircleOutline.png" />
+    <None Remove="Data\Design\Icons\helpCircleOutline.svg" />
+    <None Remove="Data\Design\Icons\languageOutline.png" />
+    <None Remove="Data\Design\Icons\maximizeIcon.png" />
+    <None Remove="Data\Design\Icons\maximizeIcon.svg" />
+    <None Remove="Data\Design\Icons\minimizeFill.png" />
+    <None Remove="Data\Design\Icons\minimizeFill.svg" />
+    <None Remove="Data\Design\Icons\monitorDashboard.png" />
+    <None Remove="Data\Design\Icons\monitorDashboard.svg" />
+    <None Remove="Data\Design\Icons\newFileOutline.png" />
+    <None Remove="Data\Design\Icons\newFileOutline.svg" />
+    <None Remove="Data\Design\Icons\outlineNewReleases.png" />
+    <None Remove="Data\Design\Icons\outlineNewReleases.svg" />
+    <None Remove="Data\Design\Icons\restore-line.png" />
+    <None Remove="Data\Design\Icons\restore-line.svg" />
+    <None Remove="Data\Design\Icons\restoreIcon.png" />
+    <None Remove="Data\Design\Icons\restoreIcon.svg" />
+    <None Remove="Data\Design\Icons\settingsOutline.png" />
+    <None Remove="Data\Design\Icons\settingsOutline.svg" />
+    <None Remove="Data\Design\Icons\themeOutline.png" />
+    <None Remove="Data\Design\Icons\themeOutline.svg" />
+    <None Remove="Data\Design\Icons\UnactiveButton-2.svg" />
+    <None Remove="Data\Design\Icons\UnactiveRememberLoginButton.png" />
+    <None Remove="Data\Design\Icons\unactiveRememberLoginButton.svg" />
+    <None Remove="Data\Design\Icons\unactiveRememberLoginButtonIc.png" />
+    <None Remove="Data\Design\Icons\userSettingsOutline.png" />
+    <None Remove="Data\Design\Icons\userSettingsOutline.svg" />
+    <None Remove="Data\Design\Pics\Pic1.jpg" />
+    <None Remove="Data\Fonts\HappyMonkey-Regular.ttf" />
+    <None Remove="Data\Fonts\Sansation_Light.ttf" />
+    <None Remove="SplashScr.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HandyControls" Version="3.5.3" />
+    <PackageReference Include="Neo.Markdig.Xaml" Version="1.0.10" />
+    <PackageReference Include="Svg" Version="3.4.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Data\Design\Icons\activeRememberLoginButton.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\activeRememberLoginButtonIc.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\backIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\backIcon.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\closeIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\closeIcon.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\exitFromAccountRounded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\exitFromAccountRounded.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\fileEditOutline.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\fileEditOutline.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\helpCircleOutline.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\helpCircleOutline.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\languageOutline.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\maximizeIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\maximizeIcon.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\minimizeFill.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\minimizeFill.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\monitorDashboard.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\monitorDashboard.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\newFileOutline.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\newFileOutline.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\outlineNewReleases.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\outlineNewReleases.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\restoreIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\restoreIcon.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\settingsOutline.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\settingsOutline.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\themeOutline.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\themeOutline.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\unactiveRememberLoginButton.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\unactiveRememberLoginButton.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\unactiveRememberLoginButtonIc.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\userSettingsOutline.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Icons\userSettingsOutline.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Design\Pics\Pic1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Fonts\HappyMonkey-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\Fonts\Sansation_Light.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="SplashScr.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Info\" />
+    <Folder Include="Users\" />
+  </ItemGroup>
+
+</Project>

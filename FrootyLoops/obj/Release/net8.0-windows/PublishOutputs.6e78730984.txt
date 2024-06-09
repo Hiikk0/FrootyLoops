@@ -1,0 +1,8 @@
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\Практика 2\FrootyLoops\FrootyLoops\bin\Release\net8.0-windows\publish\FrootyLoops.exe
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\Практика 2\FrootyLoops\FrootyLoops\bin\Release\net8.0-windows\publish\FrootyLoops.dll
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\Практика 2\FrootyLoops\FrootyLoops\bin\Release\net8.0-windows\publish\FrootyLoops.deps.json
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\Практика 2\FrootyLoops\FrootyLoops\bin\Release\net8.0-windows\publish\FrootyLoops.runtimeconfig.json
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\Практика 2\FrootyLoops\FrootyLoops\bin\Release\net8.0-windows\publish\FrootyLoops.pdb
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\Практика 2\FrootyLoops\FrootyLoops\bin\Release\net8.0-windows\publish\ExCSS.dll
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\Практика 2\FrootyLoops\FrootyLoops\bin\Release\net8.0-windows\publish\HandyControl.dll
+C:\Users\Shado\OneDrive\КН-24\ОПАМ\Практика 2\FrootyLoops\FrootyLoops\bin\Release\net8.0-windows\publish\Svg.dll

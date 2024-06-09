@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "HC7AXfAOl0l4gAXbn7ZlPk7XfXy30oALr+yX4N0vRSbTiAgx4JlClAJCzuctOKI/PMgdloJTeUeo0S78zdCapg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Shado\\OneDrive\\КН-24\\ОПАМ\\Практика 2\\FrootyLoops\\FrootyLoops\\FrootyLoops.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Shado\\.nuget\\packages\\excss\\4.2.3\\excss.4.2.3.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\handycontrols\\3.5.2\\handycontrols.3.5.2.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.2\\microsoft.net.illink.tasks.8.0.2.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\svg\\3.4.7\\svg.3.4.7.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\system.drawing.common\\5.0.3\\system.drawing.common.5.0.3.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.2\\microsoft.netcore.app.runtime.win-x64.8.0.2.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.2\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.2.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.2\\microsoft.aspnetcore.app.runtime.win-x64.8.0.2.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\8.0.2\\microsoft.netcore.app.crossgen2.win-x64.8.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
