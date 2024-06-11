@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FrootyLoops")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.2.5.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.2.5+c00e1b21f0e562a72ed829f722e0496f92cf98ca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.2.5+87caf71f00a25b454bac27a5b38bcc56ad7e3b2d")]
 [assembly: System.Reflection.AssemblyProductAttribute("FrootyLoops")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FrootyLoops")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.2.5.0")]

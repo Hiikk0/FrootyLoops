@@ -65,7 +65,7 @@ namespace FrootyLoops.UserControls.SettingsContent {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FrootyLoops;V0.2.5.0;component/usercontrols/settingscontent/systemsettings.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FrootyLoops;V0.2.7.0;component/usercontrols/settingscontent/systemsettings.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\UserControls\SettingsContent\SystemSettings.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
