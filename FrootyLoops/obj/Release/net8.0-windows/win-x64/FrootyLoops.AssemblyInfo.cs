@@ -13,11 +13,11 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("FrootyLoops")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.2.7.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.2.7+87caf71f00a25b454bac27a5b38bcc56ad7e3b2d")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.2.11.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.2.11+0ee86eca7d40a4df11314cbdfe5a4a730431211e")]
 [assembly: System.Reflection.AssemblyProductAttribute("FrootyLoops")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FrootyLoops")]
-[assembly: System.Reflection.AssemblyVersionAttribute("0.2.7.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("0.2.11.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 

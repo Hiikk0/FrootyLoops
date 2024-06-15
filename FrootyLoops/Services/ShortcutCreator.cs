@@ -9,6 +9,11 @@ namespace FrootyLoops.Services
 {
     public class ShortcutCreator
     {
+        /// <summary>
+        /// Створювач ярликів
+        /// </summary>
+        /// <param name="pathToFile"> Шлях до файлу</param>
+        /// <param name="pathToLocation"> Шлях до місця розташування ярлика</param>
         public static void Creator(string pathToFile, string pathToLocation) 
         {
             Type t = Type.GetTypeFromCLSID(new Guid("72C24DD5-D70A-438B-8A42-98424B88AFB8")); //Windows Script Host Shell Object

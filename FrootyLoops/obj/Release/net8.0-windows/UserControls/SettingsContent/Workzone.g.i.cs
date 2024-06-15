@@ -65,7 +65,7 @@ namespace FrootyLoops.UserControls.SettingsContent {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FrootyLoops;V0.2.7.0;component/usercontrols/settingscontent/workzone.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FrootyLoops;component/usercontrols/settingscontent/workzone.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\UserControls\SettingsContent\Workzone.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

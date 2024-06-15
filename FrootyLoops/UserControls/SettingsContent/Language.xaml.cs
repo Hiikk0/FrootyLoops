@@ -20,6 +20,9 @@ namespace FrootyLoops.UserControls.SettingsContent
     /// </summary>
     public partial class Language : UserControl
     {
+        /// <summary>
+        /// Точка входу
+        /// </summary>
         public Language()
         {
             InitializeComponent();

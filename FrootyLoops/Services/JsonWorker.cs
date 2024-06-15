@@ -113,6 +113,11 @@ namespace FrootyLoops.Services
             }
             return returnJson;
         }
+        /// <summary>
+        /// Отримання поточного користувача
+        /// </summary>
+        /// <param name="path">Шлях до користувача</param>
+        /// <returns>Сутність поточного користувача</returns>
         public static User? GetUser(string path)
         {
            

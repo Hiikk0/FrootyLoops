@@ -40,11 +40,16 @@ namespace FrootyLoops.Forms
         /// </summary>
         private SizeToContent sizeToContent;
         /// <summary>
-        /// Точка входу, ініціалізація MainWindowViewModel
+        /// Максимальна іконка
         /// </summary>
         private readonly BitmapImage maxIcon = new BitmapImage(new Uri("/Data/Design/Icons/maximizeIcon.png", UriKind.Relative));
-
+        /// <summary>
+        /// Мінімальна іконка
+        /// </summary>
         private readonly BitmapImage minIcon = new BitmapImage(new Uri("/Data/Design/Icons/restoreIcon.png", UriKind.Relative));
+        /// <summary>
+        /// Точка входу, ініціалізація MainWindowViewModel
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();

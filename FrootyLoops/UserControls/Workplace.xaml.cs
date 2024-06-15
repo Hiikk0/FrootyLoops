@@ -20,6 +20,9 @@ namespace FrootyLoops.UserControls
     /// </summary>
     public partial class Workplace : UserControl
     {
+        /// <summary>
+        /// Точка входу
+        /// </summary>
         public Workplace()
         {
             InitializeComponent();

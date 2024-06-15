@@ -22,11 +22,18 @@ namespace FrootyLoops.UserControls.SettingsContent
     /// </summary>
     public partial class SystemSettings : UserControl
     {
+        /// <summary>
+        /// Точка входу
+        /// </summary>
         public SystemSettings()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Встановлення програми в автозапуск
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void StartUp_Click(object sender, RoutedEventArgs e)
         {
             string pathToFile = Environment.CurrentDirectory + "/" + AppDomain.CurrentDomain.FriendlyName + ".exe";

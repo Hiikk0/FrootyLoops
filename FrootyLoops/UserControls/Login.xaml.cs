@@ -44,9 +44,17 @@ namespace FrootyLoops.UserControls
         /// Змінна для передачі події в UserControl
         /// </summary>
         public event Action? GoToStartPage;
-
+        /// <summary>
+        /// Чи робити автовход
+        /// </summary>
         private bool remem = false;
+        /// <summary>
+        /// Активна іконка
+        /// </summary>
         private readonly BitmapImage active = new BitmapImage(new Uri("/Data/Design/Icons/activeRememberLoginButtonIc.png", UriKind.Relative));
+        /// <summary>
+        /// Неактивна іконка
+        /// </summary>
         private readonly BitmapImage unactive = new BitmapImage(new Uri("/Data/Design/Icons/unactiveRememberLoginButtonIc.png", UriKind.Relative));
         /// <summary>
         /// Зміна іконки в Remember me

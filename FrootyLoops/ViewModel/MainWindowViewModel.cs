@@ -33,7 +33,9 @@ namespace FrootyLoops.ViewModel
         /// Тимчасова змінна для поточного способу визначення розміру вікна.
         /// </summary>
         public static SizeToContent _currentSizeToContentState = SizeToContent.WidthAndHeight;
-
+        /// <summary>
+        /// Стандартна іконка користувача
+        /// </summary>
         BitmapImage stdImage = new BitmapImage(new Uri(App.STDPATH + "/Data/Design/Pics/Pic1.jpg", UriKind.Relative));
         /// <summary>
         /// Точка входу. Виклик першого UserControl
@@ -146,7 +148,9 @@ namespace FrootyLoops.ViewModel
             Control.ShowSettings += () => ShowSettings(Control.BUTTONID);
             Control.ShowWorkplace += ShowWorkplace;
         }
-
+        /// <summary>
+        /// Встановлення Workplace поточним контентом вікна та підписка на події
+        /// </summary>
         private void ShowWorkplace()
         {
             var Control = new UserControls.Workplace();

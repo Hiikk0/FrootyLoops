@@ -21,11 +21,17 @@ namespace FrootyLoops.UserControls.SettingsContent
     /// </summary>
     public partial class FAQ : UserControl
     {
+        /// <summary>
+        /// Точка входу
+        /// </summary>
         public FAQ()
         {
             InitializeComponent();
             Load();
         }
+        /// <summary>
+        /// Завантаження документу
+        /// </summary>
         public void Load()
         {
             flowDocumentViewer.Document = MarkdownWorker.MarkdownRender(App.STDPATH + "/Data/Info/FAQ.md");

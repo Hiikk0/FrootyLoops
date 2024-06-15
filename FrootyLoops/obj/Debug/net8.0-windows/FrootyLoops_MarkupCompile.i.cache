@@ -1,5 +1,5 @@
 ﻿FrootyLoops
-0.2.5.0
+0.2.11.0
 
 winexe
 C#
@@ -16,5 +16,5 @@ C:\Users\Shado\OneDrive\КН-24\ОПАМ\FL\FrootyLoops\FrootyLoops\App.xaml
 20592268057
 Data\Themes\LightTheme.xaml;Data\Themes\Theme.xaml;Forms\MainWindow.xaml;UserControls\Login.xaml;UserControls\Registration.xaml;UserControls\Settings.xaml;UserControls\SettingsContent\FAQ.xaml;UserControls\SettingsContent\Language.xaml;UserControls\SettingsContent\SystemSettings.xaml;UserControls\SettingsContent\Theme.xaml;UserControls\SettingsContent\Update.xaml;UserControls\SettingsContent\UserSettings.xaml;UserControls\SettingsContent\WhatsNew.xaml;UserControls\SettingsContent\Workzone.xaml;UserControls\StartPage.xaml;UserControls\Workplace.xaml;
 splashscr.png
-True
+False
 

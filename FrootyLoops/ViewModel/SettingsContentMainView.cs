@@ -43,6 +43,9 @@ namespace FrootyLoops.ViewModel
                 OnPropertyChanged("CurrentSettingsContent");
             }
         }
+        /// <summary>
+        /// Видалення аккаунту
+        /// </summary>
         public object DeleteAccount
         {
             get
@@ -56,7 +59,9 @@ namespace FrootyLoops.ViewModel
                 OnPropertyChanged("DeleteAccount");
             }
         }
-
+        /// <summary>
+        /// Ім'я користувача
+        /// </summary>
         private string _userName = CurrentUser.user.Name;
         public string UserName
         {
@@ -67,6 +72,9 @@ namespace FrootyLoops.ViewModel
                 OnPropertyChanged("UserName");
             }
         }
+        /// <summary>
+        /// Ел. пошта користувача
+        /// </summary>
         private string _userEmail = CurrentUser.user.Email;
         public string UserEmail
         {
@@ -77,6 +85,9 @@ namespace FrootyLoops.ViewModel
                 OnPropertyChanged("UserEmail");
             }
         }
+        /// <summary>
+        /// Хеш пароль користувача
+        /// </summary>
         private string _userPassword = CurrentUser.user.Password;
         public string UserPassword
         {
@@ -87,6 +98,9 @@ namespace FrootyLoops.ViewModel
                 OnPropertyChanged("UserPassword");
             }
         }
+        /// <summary>
+        /// Підказка до паролю
+        /// </summary>
         private string _userPasswordHint = CurrentUser.user.PasswordHint;
         public string UserPasswordHint
         {
@@ -97,51 +111,73 @@ namespace FrootyLoops.ViewModel
                 OnPropertyChanged("UserPasswordHint");
             }
         }
+        /// <summary>
+        /// Вийти з аккаунту
+        /// </summary>
         public void ExitFromAcc()
         {
             try { File.Delete(App.STDPATH + "/Users/user.json"); } catch (FileNotFoundException) { }
             CurrentUser.Clear();
         }
-
+        /// <summary>
+        /// Встановити поточним контентом налаштування
+        /// </summary>
         public void ThemeShow()
         {
             var content = new Theme();
             CurrentSettingsContent = content;
         }
-
+        /// <summary>
+        /// Встановити поточним контентом налаштування
+        /// </summary>
         public void WhatsNewShow()
         {
             var content = new WhatsNew();
             CurrentSettingsContent = content;
         }
-
+        /// <summary>
+        /// Встановити поточним контентом налаштування
+        /// </summary>
         public void FAQShow()
         {
             var content = new FAQ();
             CurrentSettingsContent = content;
         }
-
+        /// <summary>
+        /// Встановити поточним контентом налаштування
+        /// </summary>
         public void SysSetShow()
         {
             var content = new SystemSettings();
             CurrentSettingsContent = content;
         }
-
+        /// <summary>
+        /// Встановити поточним контентом налаштування
+        /// </summary>
         public void WorkzoneShow()
         {
             var content = new Workzone();
             CurrentSettingsContent = content;
         }
+        /// <summary>
+        /// Встановити поточним контентом налаштування
+        /// </summary>
         public void LanguageShow()
         {
             var content = new Language();
             CurrentSettingsContent = content;
         }
+        /// <summary>
+        /// Встановити поточним контентом налаштування
+        /// </summary>
         public void UpdateShow()
         {
             var content = new Update();
             CurrentSettingsContent = content;
         }
+        /// <summary>
+        /// Встановити поточним контентом налаштування
+        /// </summary>
         public void UserSetShow()
         {
             var content = new UserSettings();
@@ -155,7 +191,9 @@ namespace FrootyLoops.ViewModel
             content.UserPic.ImageUnselected += UserPic_ImageUnSelected;
             content.Delete += UserDeleteWarning;
         }
-
+        /// <summary>
+        /// Видалення аккаунту
+        /// </summary>
         private void UserDeleteWarning()
         {
             Growl.Ask("Are you sure you want to delete your account? This action cannot be undone.", isConfirmed =>
@@ -174,7 +212,10 @@ namespace FrootyLoops.ViewModel
                 }
             }, "SettingsErrors");
         }
-
+        /// <summary>
+        /// Скасування змін
+        /// </summary>
+        /// <param name="content"></param>
         private void CancelChanges(UserSettings content)
         {
             content.Username.Text = UserName;
@@ -191,8 +232,16 @@ namespace FrootyLoops.ViewModel
                 Token = "SettingsErrors",
             });
         }
-
+        /// <summary>
+        /// Чи успишно були застосовані зміни
+        /// </summary>
         private bool success = true;
+        /// <summary>
+        /// Перевірка на коректність введених значень
+        /// </summary>
+        /// <param name="content"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
         private bool CheckInput(UserSettings content, int value)
         {
             List<string> Errors;
@@ -238,6 +287,10 @@ namespace FrootyLoops.ViewModel
             }
             else { success = true; return true; }
         }
+        /// <summary>
+        /// Збереження значень
+        /// </summary>
+        /// <param name="content"></param>
         public void SaveChanges(UserSettings content)
         {
             if (content.Username.Text != CurrentUser.user.Name && CheckInput(content,0) == true)
@@ -306,7 +359,11 @@ namespace FrootyLoops.ViewModel
                 });
             }
         }
-
+        /// <summary>
+        /// Якщо була вибрана аватарка
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UserPic_ImageSelected(object sender, RoutedEventArgs e)
         {
             UserPic_ImageUnSelected(sender,e);
@@ -327,6 +384,11 @@ namespace FrootyLoops.ViewModel
                 });
             };
         }
+        /// <summary>
+        /// Якщо аватарку прибрали
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UserPic_ImageUnSelected(object sender, RoutedEventArgs e)
         {
             foreach (var file in Directory.GetFiles(App.STDPATH + "/Users/" + UserName + "/", "*" + ".jpg").Concat

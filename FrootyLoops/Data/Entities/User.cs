@@ -57,6 +57,9 @@ namespace FrootyLoops.Data.Entities
             CurrentUser.user.LastLogDataTimeString = "";
         }
     }
+    /// <summary>
+    /// Зберігання поточного користувача
+    /// </summary>
     public class CurrentUser()
     {
         public static User user;

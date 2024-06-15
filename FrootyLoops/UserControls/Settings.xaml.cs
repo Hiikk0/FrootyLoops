@@ -27,6 +27,9 @@ namespace FrootyLoops.UserControls
     /// </summary>
     public partial class Settings : UserControl
     {
+        /// <summary>
+        /// Змінна, що встановлює поточний контент
+        /// </summary>
         SettingsContentMainView viewModel;
         /// <summary>
         /// Змінна для передачі подій в UserControl
@@ -88,43 +91,71 @@ namespace FrootyLoops.UserControls
             //Content.Content = new Theme();
             viewModel.ThemeShow();
         }
-
+        /// <summary>
+        /// Відтворення у частині вікна контенту з налаштуваннями
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void WhatsNew_Checked(object sender, RoutedEventArgs e)
         {
             //Content.Content = new WhatsNew();
             viewModel.WhatsNewShow();
         }
-
+        /// <summary>
+        /// Відтворення у частині вікна контенту з налаштуваннями
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FAQ_Checked(object sender, RoutedEventArgs e)
         {
             //Content.Content = new FAQ();
             viewModel.FAQShow();
         }
-
+        /// <summary>
+        /// Відтворення у частині вікна контенту з налаштуваннями
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SysSetBtn_Checked(object sender, RoutedEventArgs e)
         {
             //Content.Content = new SystemSettings();
             viewModel.SysSetShow();
         }
-
+        /// <summary>
+        /// Відтворення у частині вікна контенту з налаштуваннями
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void WorkSetBtn_Checked(object sender, RoutedEventArgs e)
         {
             //Content.Content = new Workzone();
             viewModel.WorkzoneShow();
         }
-
+        /// <summary>
+        /// Відтворення у частині вікна контенту з налаштуваннями
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LangSetBtn_Checked(object sender, RoutedEventArgs e)
         {
             //Content.Content = new Language();
             viewModel.LanguageShow();
         }
-
+        /// <summary>
+        /// Відтворення у частині вікна контенту з налаштуваннями
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UserSetBtn_Checked(object sender, RoutedEventArgs e)
         {
             //Content.Content = new UserSettings();
             viewModel.UserSetShow();
         }
-
+        /// <summary>
+        /// Відтворення у частині вікна контенту з налаштуваннями
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Update_Checked(object sender, RoutedEventArgs e)
         {
             viewModel.UpdateShow();

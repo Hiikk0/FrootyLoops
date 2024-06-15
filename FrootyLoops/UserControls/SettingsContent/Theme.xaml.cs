@@ -66,7 +66,11 @@ namespace FrootyLoops.UserControls.SettingsContent
                 ChangeTheme(result);
             }
         }
-
+        /// <summary>
+        /// Not Implemented
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ExpandButtonClick(object sender, RoutedEventArgs e)
         {
             //this.Menu.Visibility = this.Menu.Visibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;

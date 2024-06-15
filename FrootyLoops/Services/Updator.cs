@@ -15,16 +15,34 @@ namespace FrootyLoops.Services
 {
     public class UpdateManager
     {
+        /// <summary>
+        /// Клієнт для взаємодії з GitHub API
+        /// </summary>
         private readonly GitHubClient _client;
+        /// <summary>
+        /// Поточна версія
+        /// </summary>
         private readonly string _currentVersion;
+        /// <summary>
+        /// Найновіша доступна версія
+        /// </summary>
         public static Version? _lastestVersion;
-
+        /// <summary>
+        /// Точка входу
+        /// </summary>
+        /// <param name="currentVersion"></param>
         public UpdateManager(string currentVersion)
         {
             _client = new GitHubClient(new Octokit.ProductHeaderValue("FrootyLoops")) { Credentials = new Credentials(File.ReadAllText(App.STDPATH + "/Data/Info/Config.txt")) };
             _currentVersion = currentVersion;
         }
-
+        /// <summary>
+        /// Перевірка оновлень
+        /// </summary>
+        /// <param name="owner"></param>
+        /// <param name="repo"></param>
+        /// <param name="download"></param>
+        /// <returns></returns>
         public async Task CheckForUpdatesAsync(string owner, string repo, bool download)
         {
             var release = await _client.Repository.Release.GetLatest(owner, repo);
@@ -36,7 +54,13 @@ namespace FrootyLoops.Services
                 await DownloadLatestReleaseAsync(release, owner, repo);
             }
         }
-
+        /// <summary>
+        /// Завантажує та запускає інсталятор
+        /// </summary>
+        /// <param name="release"></param>
+        /// <param name="owner"></param>
+        /// <param name="repo"></param>
+        /// <returns></returns>
         private async Task DownloadLatestReleaseAsync(Release release, string owner, string repo)
         {
             using (var client = new System.Net.Http.HttpClient())
@@ -46,20 +70,16 @@ namespace FrootyLoops.Services
                 client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", credentials);
                 foreach (var asset in release.Assets)
                 {
-                    if (asset.Name.EndsWith("setup.exe"))
-                    {
-                        var contents = await client.GetByteArrayAsync(asset.BrowserDownloadUrl);
-                        System.IO.File.WriteAllBytes(Path.Combine(Path.GetTempPath(), asset.Name), contents);
-                    }
                     if (asset.Name.EndsWith("FL.Setup.msi"))
                     {
                         var contents = await client.GetByteArrayAsync(asset.BrowserDownloadUrl);
                         System.IO.File.WriteAllBytes(Path.Combine(Path.GetTempPath(), asset.Name), contents);
                     }
                 }
-                if (File.Exists(Path.Combine(Path.GetTempPath(), "setup.exe")) && File.Exists(Path.Combine(Path.GetTempPath(), "FL.Setup.msi")))
+                if (File.Exists(Path.Combine(Path.GetTempPath(), "FL.Setup.msi")))
                 {
-                    Process.Start(Path.Combine(Path.GetTempPath(), "setup.exe"));
+                    string msiPath = Path.Combine(Path.GetTempPath(), "FL.Setup.msi");
+                    Process.Start("msiexec.exe", "/i \"" + msiPath /*+ "\" /qn"*/);
                     Environment.Exit(0);
                 }
             }

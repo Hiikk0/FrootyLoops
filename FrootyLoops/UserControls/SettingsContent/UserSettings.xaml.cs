@@ -25,18 +25,39 @@ namespace FrootyLoops.UserControls.SettingsContent
     /// </summary>
     public partial class UserSettings : UserControl
     {
+        /// <summary>
+        /// Зміни зберегти
+        /// </summary>
         public event Action? Accept;
+        /// <summary>
+        /// Зміни скасувати
+        /// </summary>
         public event Action? Decline;
+        /// <summary>
+        /// Аккаунт видалити
+        /// </summary>
         public event Action? Delete;
+        /// <summary>
+        /// Точка входу
+        /// </summary>
         public UserSettings()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Після натискання на кнопку Accept
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Accept_Click(object sender, RoutedEventArgs e)
         {
             Accept?.Invoke();
         }
+        /// <summary>
+        /// Перевірка, чи пароль правильний. Якщо так - пароль можна змінити.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UserPassword_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (Encryptor.Encrypt(UserPassword.Text) == CurrentUser.user.Password)
@@ -44,12 +65,20 @@ namespace FrootyLoops.UserControls.SettingsContent
                 NewPassword.IsEnabled = true;
             }
         }
-
+        /// <summary>
+        /// Після натискання на кнопку Cancel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             Decline?.Invoke();
         }
-
+        /// <summary>
+        /// Після натискання на кнопку Delete account
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DelAccBtn_Click(object sender, RoutedEventArgs e)
         {
             Delete?.Invoke();

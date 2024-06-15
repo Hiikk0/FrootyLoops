@@ -22,12 +22,17 @@ namespace FrootyLoops.UserControls.SettingsContent
     /// </summary>
     public partial class WhatsNew : UserControl
     {
+        /// <summary>
+        /// Точка входу
+        /// </summary>
         public WhatsNew()
         {
             InitializeComponent();
             Load();
         }
-
+        /// <summary>
+        /// Завантаження документу
+        /// </summary>
         public void Load()
         {
             flowDocumentViewer.Document = MarkdownWorker.MarkdownRender(App.STDPATH + "/Data/Info/ChangeLog.md");

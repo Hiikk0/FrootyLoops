@@ -107,7 +107,7 @@ namespace FrootyLoops.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FrootyLoops;V0.2.7.0;component/usercontrols/startpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FrootyLoops;component/usercontrols/startpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\UserControls\StartPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
