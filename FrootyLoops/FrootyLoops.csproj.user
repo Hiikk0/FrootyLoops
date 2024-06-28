@@ -51,6 +51,30 @@
     <Compile Update="UserControls\Workplace.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserControls\WorkplaceContent\MIDIList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\WorkplaceContent\MusicBlock.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\WorkplaceContent\Storage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\WorkplaceContent\TimeRuler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\WorkplaceContent\TrackArray.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\WorkplaceContent\TrackView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\WorkplaceContent\TrackZone.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\WorkplaceContent\UserResourses.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Data\Themes\LightTheme.xaml">
@@ -99,6 +123,27 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControls\Workplace.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\WorkplaceContent\MIDIList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\WorkplaceContent\MusicBlock.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\WorkplaceContent\Storage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\WorkplaceContent\TrackArray.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\WorkplaceContent\TrackView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\WorkplaceContent\TrackZone.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\WorkplaceContent\UserResourses.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

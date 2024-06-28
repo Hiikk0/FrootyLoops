@@ -15,6 +15,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FrootyLoops.Data.Entities;
 using Microsoft.Win32;
+using FrootyLoops.Services;
+using FrootyLoops.ViewModel;
 
 namespace FrootyLoops.UserControls
 {
@@ -67,8 +69,11 @@ namespace FrootyLoops.UserControls
         private void OpenFile_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Music files (*.mp3, *.wav)|*.mp3; *.wav";
-            openFileDialog.ShowDialog();
+            openFileDialog.Filter = "Music files (*.mp3, *.wav)|*.mp3; *.wav|FL files|*.flsp";
+            if (openFileDialog.ShowDialog() == true)
+            {
+               MainViewModel.fileToSave = openFileDialog.FileName;
+            }
             ShowWorkplace?.Invoke();
         }
     }

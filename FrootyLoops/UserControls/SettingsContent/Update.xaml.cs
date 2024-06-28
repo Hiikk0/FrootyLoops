@@ -27,13 +27,24 @@ namespace FrootyLoops.UserControls.SettingsContent
         /// <summary>
         /// Створення об'єкта системи оновлення
         /// </summary>
-        UpdateManager update = new UpdateManager(Assembly.GetExecutingAssembly().GetName().Version.ToString());
+        UpdateManager update;
         /// <summary>
         /// Точка входу
         /// </summary>
         public Update()
         {
             InitializeComponent();
+            try
+            {
+                update = new UpdateManager(Assembly.GetExecutingAssembly().GetName().Version.ToString());
+                CheckBtn.IsEnabled = true;
+                UpdateBtn.IsEnabled = true;
+            }
+            catch (Exception)
+            {
+                CheckBtn.IsEnabled = false;
+                UpdateBtn.IsEnabled = false;
+            }
             CurrVerTxtBlock.Text ="Current version: " + Assembly.GetExecutingAssembly().GetName().Version.ToString();
         }
         /// <summary>
@@ -64,7 +75,7 @@ namespace FrootyLoops.UserControls.SettingsContent
         {
             try { 
                 await update.CheckForUpdatesAsync("Hiikk0", "FrootyLoops", false);
-                AvalVerTxtBlock.Text = "Avalible version: " + UpdateManager._lastestVersion.ToString();
+                AvalVerTxtBlock.Text = "Available version: " + UpdateManager._lastestVersion.ToString();
                 }
             catch (Exception ex) {
                 Growl.Error(new GrowlInfo

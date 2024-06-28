@@ -32,7 +32,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Button Style="{StaticResource SmallAcceptButton}" Width="165" HorizontalAlignment="Left" Click="CheckForUpdate">
+            <Button x:Name="CheckBtn" Style="{StaticResource SmallAcceptButton}" Width="165" HorizontalAlignment="Left" Click="CheckForUpdate">
                 <hc:SimpleStackPanel 
                         Orientation="Horizontal">
                     <Image
@@ -46,7 +46,7 @@
                             Text="Check for update" Margin="10,0,0,0" />
                 </hc:SimpleStackPanel>
             </Button>
-            <Button Style="{StaticResource SmallAcceptButton}" Grid.Column="1" HorizontalAlignment="Left" Width="205" Margin="10,0,0,0" Click="LoadAndUpdate_Click">
+            <Button x:Name="UpdateBtn" Style="{StaticResource SmallAcceptButton}" Grid.Column="1" HorizontalAlignment="Left" Width="205" Margin="10,0,0,0" Click="LoadAndUpdate_Click">
                 <hc:SimpleStackPanel 
                         Orientation="Horizontal">
                     <Image

@@ -122,6 +122,7 @@ namespace FrootyLoops.ViewModel
             Control.SwitchToLogin += ShowLogin;
             Control.GoToStartPage += ShowStartPage;
         }
+        public static string fileToSave;
         /// <summary>
         /// Встановлення StartPage поточним контентом вікна та підписка на події
         /// Шляхи: до налаштувань
@@ -148,6 +149,7 @@ namespace FrootyLoops.ViewModel
             Control.ShowSettings += () => ShowSettings(Control.BUTTONID);
             Control.ShowWorkplace += ShowWorkplace;
         }
+        
         /// <summary>
         /// Встановлення Workplace поточним контентом вікна та підписка на події
         /// </summary>

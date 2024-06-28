@@ -1,8 +1,9 @@
 {
+  "$id": "1",
   "Name": "h",
   "Email": "A@a.com",
   "Password": "2e365797da66d77e7b7a03d93b314416df3022c76eb74774c4a7355fcdff91eeec80527509c05e0dff92a35119e776e0fb51005d24f3dd09176de2ecd31eb2ab",
   "PasswordHint": "",
   "RegDateString": "2024-06-12T14:46:00.1279700\u002B03:00",
-  "LastLogDataTimeString": "12.06.2024 16:04:54"
+  "LastLogDataTimeString": "28.06.2024 11:35:38"
 }

@@ -1,18 +1,29 @@
 {
   "version": 2,
-  "dgSpecHash": "oM+0RyNT/9sz9mrLpDxjs8BKOKzwB9Lm613HZumu8xCkNGo1FJfvoOUcV5qKAqoo1ueVo+RcvZlYUQ8VRMDncA==",
+  "dgSpecHash": "9QIhxlQmXa4ixGEXn3co3StLg4MJ84slH7qNbTzGeJ43Nx/MdRwom82BfBf9zRTXJaMfyJ0XYn60NIntBAroXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Shado\\OneDrive\\КН-24\\ОПАМ\\FL\\FrootyLoops\\FrootyLoops\\FrootyLoops.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Shado\\.nuget\\packages\\excss\\4.2.3\\excss.4.2.3.nupkg.sha512",
     "C:\\Users\\Shado\\.nuget\\packages\\handycontrols\\3.5.3\\handycontrols.3.5.3.nupkg.sha512",
     "C:\\Users\\Shado\\.nuget\\packages\\markdig\\0.25.0\\markdig.0.25.0.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\melanchall.drywetmidi\\7.1.0\\melanchall.drywetmidi.7.1.0.nupkg.sha512",
     "C:\\Users\\Shado\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Shado\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\naudio\\2.2.1\\naudio.2.2.1.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\naudio.asio\\2.2.1\\naudio.asio.2.2.1.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\naudio.core\\2.2.1\\naudio.core.2.2.1.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\naudio.midi\\2.2.1\\naudio.midi.2.2.1.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\naudio.wasapi\\2.2.1\\naudio.wasapi.2.2.1.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\naudio.winforms\\2.2.1\\naudio.winforms.2.2.1.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\naudio.winmm\\2.2.1\\naudio.winmm.2.2.1.nupkg.sha512",
     "C:\\Users\\Shado\\.nuget\\packages\\neo.markdig.xaml\\1.0.10\\neo.markdig.xaml.1.0.10.nupkg.sha512",
     "C:\\Users\\Shado\\.nuget\\packages\\octokit\\12.0.0\\octokit.12.0.0.nupkg.sha512",
     "C:\\Users\\Shado\\.nuget\\packages\\svg\\3.4.7\\svg.3.4.7.nupkg.sha512",
-    "C:\\Users\\Shado\\.nuget\\packages\\system.drawing.common\\5.0.3\\system.drawing.common.5.0.3.nupkg.sha512"
+    "C:\\Users\\Shado\\.nuget\\packages\\system.drawing.common\\5.0.3\\system.drawing.common.5.0.3.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Shado\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

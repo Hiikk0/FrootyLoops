@@ -7,6 +7,7 @@
     xmlns:local="clr-namespace:FrootyLoops.UserControls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:sv="clr-namespace:FrootyLoops.Services"
+    xmlns:wpc="clr-namespace:FrootyLoops.UserControls.WorkplaceContent"
     MinWidth="960"
     MinHeight="576">
     <Grid Margin="0,0,0,32">
@@ -24,7 +25,7 @@
                 <Button
                     Width="90"
                     Margin="20,0,0,0"
-                    Style="{StaticResource SmallDeclineButton}">
+                    Style="{StaticResource SmallDeclineButton}" Click="PlayButton_Click">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto" />
@@ -36,8 +37,20 @@
                             Margin="10,0,0,0"
                             VerticalAlignment="Center"
                             Style="{StaticResource TextBlockStyle}"
-                            Text="Play" />
+                            Text="Play" RenderTransformOrigin="0.5,0.5" >
+                            <TextBlock.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="3.469"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
                     </Grid>
+                </Button>
+                <Button x:Name="Save" Margin="5,0,0,0" Click="Save_Click" >
+                    
                 </Button>
             </hc:SimpleStackPanel>
         </Border>
@@ -50,14 +63,15 @@
                 Grid.Column="0"
                 Background="{DynamicResource PanelColor}"
                 CornerRadius="30">
-                <hc:SimplePanel>
-                    <ItemsControl />
-                </hc:SimplePanel>
+                <ContentPresenter x:Name="UserResoursesContent"/>
             </Border>
             <Border
                 Grid.Column="1"
                 Background="{DynamicResource PanelColor}"
-                CornerRadius="30" />
+                CornerRadius="30">
+                <ContentPresenter x:Name="TrackZoneContent">
+                </ContentPresenter>
+            </Border>
         </Grid>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
@@ -65,13 +79,24 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <Border
-                Grid.Column="1"
-                Background="{DynamicResource PanelColor}"
-                CornerRadius="30" />
-            <Border
                 Grid.Column="0"
                 Background="{DynamicResource PanelColor}"
-                CornerRadius="30" />
+                CornerRadius="30">
+                <ContentPresenter x:Name="StorageContent"/>
+            </Border>
+            <Border
+                Grid.Column="1"
+                Background="{DynamicResource PanelColor}"
+                CornerRadius="30">
+                <ContentPresenter x:Name="MIDIListContent"/>
+            </Border>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <wpc:MusicBlock  Grid.Column="1" />
         </Grid>
     </Grid>
 </UserControl>

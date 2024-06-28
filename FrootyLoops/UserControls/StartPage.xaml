@@ -234,5 +234,18 @@
                 </Grid>
             </Border>
         </DockPanel>
+        <hc:ScrollViewer
+            Grid.Column="0"
+            HorizontalAlignment="Left"
+            IsInertiaEnabled="True"
+            IsManipulationEnabled="True"
+            VerticalScrollBarVisibility="Auto">
+            <StackPanel
+                Margin="10,0,0,10"
+                VerticalAlignment="Top"
+                hc:Growl.GrowlParent="True"
+                hc:Growl.Token="MainMenuErrors"
+                CanVerticallyScroll="True" />
+        </hc:ScrollViewer>
     </Grid>
 </UserControl>

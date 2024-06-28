@@ -1,0 +1,57 @@
+﻿<UserControl
+    x:Class="FrootyLoops.UserControls.WorkplaceContent.MIDIList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FrootyLoops.UserControls.WorkplaceContent"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:rul="clr-namespace:FrootyLoops.UserControls.WorkplaceContent"
+    MinWidth="480"
+    MinHeight="247"
+    mc:Ignorable="d">
+    <Grid x:Name="MIDI">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <ScrollViewer
+                x:Name="timeRulerScrollViewer"
+                Grid.Row="0"
+                Margin="50,0,20,0"
+                HorizontalScrollBarVisibility="Visible"
+                ScrollChanged="OnScrollChanged"
+                VerticalScrollBarVisibility="Disabled">
+                <!--<rul:TimeRuler x:Name="Content" MinWidth="10000" Duration="00:01:00" />-->
+            </ScrollViewer>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <ScrollViewer 
+                    x:Name="noteScrollViewer" 
+                    Margin="0,0,0,20"
+                    VerticalScrollBarVisibility="Visible" 
+                    ScrollChanged="OnScrollChanged">
+                    <Grid x:Name="NoteGrid"></Grid>
+                </ScrollViewer>
+                <ScrollViewer
+                    x:Name="contentScrollViewer"
+                    Grid.Column="1"
+                    Margin="0,0,20,20"
+                    HorizontalScrollBarVisibility="Visible"
+                    ScrollChanged="OnScrollChanged"
+                    VerticalScrollBarVisibility="Visible">
+                    <Grid
+                        x:Name="DynamicGrid"
+                        ShowGridLines="True">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50" />
+                        </Grid.RowDefinitions>
+                    </Grid>
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

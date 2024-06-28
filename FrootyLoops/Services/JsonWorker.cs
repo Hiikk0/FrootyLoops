@@ -1,4 +1,5 @@
 ﻿using FrootyLoops.Data.Entities;
+using FrootyLoops.UserControls.WorkplaceContent;
 using HandyControl.Controls;
 using HandyControl.Data;
 using System;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Text.Unicode;
 using System.Threading.Tasks;
 using System.Windows.Shapes;
@@ -23,7 +25,8 @@ namespace FrootyLoops.Services
         public static JsonSerializerOptions options = new JsonSerializerOptions
         {
             Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
-            WriteIndented = true
+            WriteIndented = true,
+            //ReferenceHandler = ReferenceHandler.Preserve,
         };
         /// <summary>
         /// Створення Json файлу
@@ -151,6 +154,67 @@ namespace FrootyLoops.Services
                 });
                 return null;
             }
+        }
+        /// <summary>
+        /// Отримання поточного користувача
+        /// </summary>
+        /// <param name="path">Шлях до користувача</param>
+        /// <returns>Сутність поточного користувача</returns>
+        public static List<MusicBlockData>? GetMusicBlock(string path)
+        {
+            //RootObjectForList list;
+            //try 
+            //{
+            //    var jsonString = File.ReadAllText(path);
+            //    var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            //    list = JsonSerializer.Deserialize<RootObjectForList>(jsonString, options);
+            //}
+            //catch (JsonException err)
+            //{
+            //    Growl.ErrorGlobal(new GrowlInfo
+            //    {
+            //        Message = err.Message + " Recreate or restore file.",
+            //        Type = InfoType.Error,
+            //        WaitTime = 10,
+            //    });
+            //    return null;
+            //}
+            //catch (IOException err)
+            //{
+            //    Growl.ErrorGlobal(new GrowlInfo
+            //    {
+            //        Message = err.Message + " Close all apps, which use this file. If doesn't help, recreate or restore file.",
+            //        Type = InfoType.Error,
+            //        WaitTime = 10,
+            //    });
+            //    return null;
+            //}
+            //catch (Exception err)
+            //{
+            //    Growl.ErrorGlobal(new GrowlInfo
+            //    {
+            //        Message = err.Message + " Please report this bug to the developer.",
+            //        Type = InfoType.Error,
+            //        WaitTime = 10,
+            //    });
+            //    return null;
+            //}
+            List<MusicBlockData> blockData = null;
+            try
+            {
+                blockData = JsonSerializer.Deserialize<List<MusicBlockData>>(File.ReadAllText(path));
+            }
+            catch (JsonException err)
+            {
+                Growl.ErrorGlobal(new GrowlInfo
+                {
+                    Message = err.Message + " Recreate or restore file.",
+                    Type = InfoType.Error,
+                    WaitTime = 10,
+                });
+                return null;
+            }
+            return blockData;
         }
     }
 }
